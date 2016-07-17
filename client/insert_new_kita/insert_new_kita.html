@@ -1,0 +1,25 @@
+<template name="insertNewKita">
+  <div class="container">
+    {{#autoForm id="insert-kita-form" collection="Kitas" type="insert"}}
+      <div class="row">
+        <div class="col-md-6">
+          {{> afQuickField name="name"}}
+          {{> afQuickField name="description"}}
+          {{> afQuickField name="phone"}}
+          {{> afQuickField name="email"}}
+          {{> afQuickField name="person"}}
+          {{> afQuickField name="progress" options="allowed"}}
+          {{> afQuickField name="status" options="allowed"}}
+          {{> afQuickField name="responsible" options="allowed"}}
+        </div>
+        <div class="col-md-6">
+          {{> afQuickField name="closingTimes"}}
+          {{> afQuickField name="features"}}
+          {{> afQuickField name="street"}}
+          {{> afQuickField name="zipCode"}}
+          <button type="submit" class="btn btn-primary">Einfügen</button>
+        </div>
+      </div>
+    {{/autoForm}}
+  </div>
+</template>

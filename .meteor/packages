@@ -11,6 +11,7 @@ blaze-html-templates    # Compile .html files into Meteor Blaze views
 reactive-var            # Reactive variable for tracker
 jquery                  # Helpful client-side library
 tracker                 # Meteor's client-side reactive programming library
+session
 
 standard-minifier-css   # CSS minifier run for production mode
 standard-minifier-js    # JS minifier run for production mode
@@ -23,9 +24,9 @@ insecure                # Allow all DB writes from clients (for prototyping)
 aldeed:simple-schema
 aldeed:collection2
 aldeed:autoform
+aldeed:geocoder
 
 dburles:google-maps
-yogiben:autoform-map
 
 coffeescript
 

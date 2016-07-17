@@ -1,0 +1,65 @@
+<head>
+  <title>kita-suche</title>
+</head>
+
+<body>
+</body>
+
+<template name="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        {{> map}}
+      </div>
+      <div class="col-md-6">
+        {{> kitaList}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        {{> kitaDetails}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="map">
+  <div class="map-container">
+    {{> googleMap name="kitasMap" options=mapOptions}}
+  </div>
+</template>
+
+<template name="kitaList">
+  <div class="list-group kitas">
+    {{#each kitas}}
+      <a href="#" class="list-group-item kita {{active}}">
+        <h4 class="list-group-item-heading">{{this.name}}</h4>
+        <p class="list-group-item-text">{{this.street}}, {{this.zipCode}}</p>
+      </a>
+    {{/each}}
+  </div>
+</template>
+
+<template name="kitaDetails">
+  <hr>
+  {{#autoForm id="update-kita-form" doc=kita collection="Kitas" type="update" autosave=true}}
+      <div class="row">
+        <div class="col-md-6">
+          {{> afQuickField name="name"}}
+          {{> afQuickField name="description"}}
+          {{> afQuickField name="phone"}}
+          {{> afQuickField name="email"}}
+          {{> afQuickField name="progress" options="allowed"}}
+          {{> afQuickField name="status" options="allowed"}}
+          {{> afQuickField name="responsible" options="allowed"}}
+        </div>
+        <div class="col-md-6">
+          {{> afQuickField name="person"}}
+          {{> afQuickField name="closingTimes"}}
+          {{> afQuickField name="features"}}
+          {{> afQuickField name="street"}}
+          {{> afQuickField name="zipCode"}}
+        </div>
+      </div>
+    {{/autoForm}}
+</template>
