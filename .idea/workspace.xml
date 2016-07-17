@@ -20,7 +20,7 @@
     <favorites_list name="kita-suche" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.57344633">
+    <splitter split-orientation="horizontal" split-proportion="0.40677965">
       <split-first>
         <leaf>
           <file leaf-file-name="schema.coffee" pinned="false" current-in-tab="false">
@@ -41,19 +41,27 @@
           <file leaf-file-name="routes.coffee" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/routes.coffee">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
+                <state relative-caret-position="120">
                   <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-                  <folding>
-                    <marker date="1468779298000" expanded="true" signature="139:207" ph="..." />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="nav.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/layout/nav.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/main/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="522">
+                <state relative-caret-position="612">
                   <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="65" />
                   <folding />
                 </state>
@@ -94,7 +102,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="insert_new_kita.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="insert_new_kita.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/insert_new_kita/insert_new_kita.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="240">
@@ -104,11 +112,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.coffee" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.coffee" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/main/main.coffee">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+                <state relative-caret-position="525">
+                  <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -130,7 +138,6 @@
         <option value="$PROJECT_DIR$/client/layout.html" />
         <option value="$PROJECT_DIR$/client/routes.coffee" />
         <option value="$PROJECT_DIR$/client/nav.html" />
-        <option value="$PROJECT_DIR$/client/layout/nav.html" />
         <option value="$PROJECT_DIR$/settings.json" />
         <option value="$PROJECT_DIR$/client/insert_new_kita/insert_new_kita.coffee" />
         <option value="$PROJECT_DIR$/.meteor/packages" />
@@ -139,6 +146,7 @@
         <option value="$PROJECT_DIR$/both/schema.coffee" />
         <option value="$PROJECT_DIR$/client/main/main.html" />
         <option value="$PROJECT_DIR$/client/insert_new_kita/insert_new_kita.html" />
+        <option value="$PROJECT_DIR$/client/layout/nav.html" />
       </list>
     </option>
   </component>
@@ -393,12 +401,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1468774317726</updated>
-      <workItem from="1468774318819" duration="12445000" />
+      <workItem from="1468774318819" duration="12900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12445000" />
+    <option name="totallyTimeSpent" value="12900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="6" />
@@ -479,24 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/routes.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-          <folding>
-            <marker date="1468779298000" expanded="true" signature="139:207" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/layout/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -509,14 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main/main.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -560,8 +542,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
+        <state relative-caret-position="612">
           <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main/main.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/routes.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/layout/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
           <folding />
         </state>
       </provider>
