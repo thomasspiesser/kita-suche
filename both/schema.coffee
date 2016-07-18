@@ -83,6 +83,29 @@ Schemas.Kitas = new SimpleSchema
         type: "date"
   responsible:
     type: String
+    label: 'Wer kümmert sich'
     allowedValues: ['Julika', 'Thomas']
     optional: true
+  note:
+    type: String
+    label: 'Notiz'
+    optional: true
+    autoform:
+      rows: 4
 Kitas.attachSchema Schemas.Kitas
+
+
+##### Notes ######
+
+
+@Notes = new Mongo.Collection 'notes'
+
+Schemas.Notes = new SimpleSchema
+  note:
+    type: String
+    label: 'Notizen'
+    optional: true
+    autoform:
+      rows: 40
+
+Notes.attachSchema Schemas.Notes
