@@ -1,0 +1,15 @@
+<template name="notepad">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{#unless notepad}}
+          {{> quickForm id="inser-notes-form" collection="Notepad" type="insert"}}
+        {{else}}
+          {{#autoForm id="update-notes-form" doc=notepad collection="Notepad" type="update" autosave=true}}
+            {{> afQuickFields}}
+          {{/autoForm}}
+        {{/unless}}
+      </div>
+    </div>
+  </div>
+</template>

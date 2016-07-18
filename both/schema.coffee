@@ -95,17 +95,17 @@ Schemas.Kitas = new SimpleSchema
 Kitas.attachSchema Schemas.Kitas
 
 
-##### Notes ######
+##### Notepad ######
 
 
-@Notes = new Mongo.Collection 'notes'
+@Notepad = new Mongo.Collection 'notepad'
 
-Schemas.Notes = new SimpleSchema
-  note:
+Schemas.Notepad = new SimpleSchema
+  notepad:
     type: String
-    label: 'Notizen'
+    label: 'Notizblock'
     optional: true
     autoform:
       rows: 40
 
-Notes.attachSchema Schemas.Notes
+Notepad.attachSchema Schemas.Notepad

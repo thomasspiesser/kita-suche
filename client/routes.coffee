@@ -7,6 +7,6 @@ FlowRouter.route '/insert-new-kita',
   action: ->
     BlazeLayout.render 'layout', content: 'insertNewKita'
 
-FlowRouter.route '/notes',
+FlowRouter.route '/notepad',
   action: ->
-    BlazeLayout.render 'layout', content: 'notes'
+    BlazeLayout.render 'layout', content: 'notepad'
