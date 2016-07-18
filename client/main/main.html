@@ -42,24 +42,26 @@
 
 <template name="kitaDetails">
   <hr>
-  {{#autoForm id="update-kita-form" doc=kita collection="Kitas" type="update" autosave=true}}
-      <div class="row">
-        <div class="col-md-6">
-          {{> afQuickField name="name"}}
-          {{> afQuickField name="description"}}
-          {{> afQuickField name="phone"}}
-          {{> afQuickField name="email"}}
-          {{> afQuickField name="progress" options="allowed"}}
-          {{> afQuickField name="status" options="allowed"}}
-          {{> afQuickField name="responsible" options="allowed"}}
+  {{#if kita}}
+    {{#autoForm id="update-kita-form" doc=kita collection="Kitas" type="update" autosave=true}}
+        <div class="row">
+          <div class="col-md-6">
+            {{> afQuickField name="name"}}
+            {{> afQuickField name="description"}}
+            {{> afQuickField name="phone"}}
+            {{> afQuickField name="email"}}
+            {{> afQuickField name="progress" options="allowed"}}
+            {{> afQuickField name="status" options="allowed"}}
+            {{> afQuickField name="responsible" options="allowed"}}
+          </div>
+          <div class="col-md-6">
+            {{> afQuickField name="person"}}
+            {{> afQuickField name="closingTimes"}}
+            {{> afQuickField name="features"}}
+            {{> afQuickField name="street"}}
+            {{> afQuickField name="zipCode"}}
+          </div>
         </div>
-        <div class="col-md-6">
-          {{> afQuickField name="person"}}
-          {{> afQuickField name="closingTimes"}}
-          {{> afQuickField name="features"}}
-          {{> afQuickField name="street"}}
-          {{> afQuickField name="zipCode"}}
-        </div>
-      </div>
-    {{/autoForm}}
+      {{/autoForm}}
+    {{/if}}
 </template>
